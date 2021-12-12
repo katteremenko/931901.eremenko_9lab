@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab9.css">
+	<title>Frontend Task 9</title>
+</head>
+<body>
+	<div class="calculator">
+        <input type="text" id="field">
+        <table>
+            <tr>
+                <td><input type="button" value="7" onclick="val(7)"></td>
+                <td><input type="button" value="8" onclick="val(8)"></td>
+                <td><input type="button" value="9" onclick="val(9)"></td>
+                <td><input type="button" value="/" onclick="val('/')"></td>
+                <td><input type="button" value="C" onclick="clean()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="val(4)"></td>
+                <td><input type="button" value="5" onclick="val(5)"></td>
+                <td><input type="button" value="6" onclick="val(6)"></td>
+                <td><input type="button" value="*" onclick="val('*')"></td>
+                <td><input type="button" value="&#8656" onclick="back()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="val(1)"></td>
+                <td><input type="button" value="2" onclick="val(2)"></td>
+                <td><input type="button" value="3" onclick="val(3)"></td>
+                <td><input type="button" value="-" onclick="val('-')"></td>
+                <td rowspan="2"><input type="button" style="height: 130px" value="=" onclick="equal()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" style="width: 130px;" value="0" onclick="val(0)"></td>
+                <td><input type="button" value="." onclick="val('.')"></td>
+                <td><input type="button" value="+" onclick="take_val('+')"></td>
+            </tr>
+        </table>
+    </div>
+	<script src="lab9.js"></script>
+</body>
+</html>
